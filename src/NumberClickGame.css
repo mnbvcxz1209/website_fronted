@@ -1,0 +1,140 @@
+.test-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* ✅ 改為全螢幕，便於置中 */
+  background-color: #468dda;
+  overflow: hidden;
+  display: flex; /* ✅ 加上 */
+  align-items: center;/* ✅ 垂直置中 */
+  justify-content: center; /* ✅ 水平置中 */    
+}
+
+.test-button {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  font-size: 30px;
+  background-color: #34db69;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.test-button:hover {
+  transform: scale(1.05);
+  border-color: #ffeb3b;
+}
+
+.round-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* ✅ 控制文字與按鈕中間間距 */
+  text-align: center;
+}
+
+.round-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+}
+
+.round-info {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.timer-display {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.timer-display.danger {
+  color: red;
+  font-weight: bold;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
+.start-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+.game-over-text {
+  font-size: 48px;     /* 放大字體 */
+  font-weight: bold;   /* 加粗字體 */
+  color: white;          /* 你可以自訂其他顏色 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-over-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.restart-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #ccc;
+}
+
+.centered-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
