@@ -1,12 +1,12 @@
 .test-container {
   position: relative;
   width: 100vw;
-  height: 100vh; /* ✅ 改為全螢幕，便於置中 */
+  height: 100vh; /*  改為全螢幕，便於置中 */
   background-color: #468dda;
   overflow: hidden;
-  display: flex; /* ✅ 加上 */
-  align-items: center;/* ✅ 垂直置中 */
-  justify-content: center; /* ✅ 水平置中 */    
+  display: flex; 
+  align-items: center;/*  垂直置中 */
+  justify-content: center; /*  水平置中 */    
 }
 
 .test-button {
@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px; /* ✅ 控制文字與按鈕中間間距 */
+  gap: 24px; /*  控制文字與按鈕中間間距 */
   text-align: center;
 }
 
@@ -100,7 +100,7 @@
 .game-over-text {
   font-size: 48px;     /* 放大字體 */
   font-weight: bold;   /* 加粗字體 */
-  color: white;          /* 你可以自訂其他顏色 */
+  color: white;          
   text-align: center;
   margin-bottom: 20px;
 }
